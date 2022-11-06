@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="https://yxt66.github.io/2022/11/05/03koa基础/"/>
+  <link rel="canonical" href="https://yxt66.github.io/blog/2022/11/05/03koa基础/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -25,8 +25,7 @@
   <!-- Custom Files headBegin begin-->
   
   <!-- Custom Files headBegin end-->
-    <link rel="shortcut icon" type='image/x-icon' href="https://baomidou.com/img/logo.svg">
-  <link rel="preload" href="/blog/css/style.css" as="style">
+  <link rel="preload" href="/css/style.css" as="style">
   <link rel="preload" href="https://unpkg.com/volantis-static@0.0.1654736714924/media/fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="https://unpkg.com/volantis-static@0.0.1654736714924/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
@@ -38,7 +37,7 @@
   
 <meta property="og:type" content="article">
 <meta property="og:title" content="Koa">
-<meta property="og:url" content="https://yxt66.github.io/2022/11/05/03koa%E5%9F%BA%E7%A1%80/index.html">
+<meta property="og:url" content="https://yxt66.github.io/blog/2022/11/05/03koa%E5%9F%BA%E7%A1%80/index.html">
 <meta property="og:site_name" content="Taoblog">
 <meta property="og:description" content="Koa基础">
 <meta property="og:locale" content="en_US">
@@ -1552,8 +1551,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/blog/css/style.css" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/blog/css/style.css"></noscript>
+  <link rel="stylesheet" href="/css/style.css" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.css"></noscript>
   
 <script>
 if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMode))
@@ -1625,9 +1624,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   volantis.GLOBAL_CONFIG ={
     debug: "env",
-    cdn: {"js":{"app":"/blog/js/app.js","parallax":"/blog/js/plugins/parallax.js","rightMenu":"/blog/js/plugins/rightMenu.js","rightMenus":"/blog/js/plugins/rightMenus.js","sites":"/blog/js/plugins/tags/sites.js","friends":"/blog/js/plugins/tags/friends.js","contributors":"/blog/js/plugins/tags/contributors.js","search":"/blog/js/search/hexo.js"},"css":{"style":"/blog/css/style.css"}},
+    cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1667726608778),
+    lastupdate: new Date(1667729570921),
     sidebar: {
       for_page: ["blogger","category","tagcloud","text"],
       for_post: ["toc"],
@@ -2060,7 +2059,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		<div class="nav-main">
       
         
-        <a class="title flat-box" target="_self" href='/blog/'>
+        <a class="title flat-box" target="_self" href='/'>
           
             <img no-lazy class='logo' src='https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/Logo-NavBar@3x.png'/>
           
@@ -2078,11 +2077,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/blog/" title="Home"
+                href="/" title="Home"
                   
                   
                   
-                    active-action="action-blog"
+                    active-action="action-home"
                   >
                   <i class='fa-solid fa-house fa-fw'></i>Home
                 </a>
@@ -2095,11 +2094,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/blog/categories/" title="Categories"
+                href="/categories/" title="Categories"
                   
                   
                   
-                    active-action="action-blogcategories"
+                    active-action="action-categories"
                   >
                   <i class='fa-solid fa-folder-open fa-fw'></i>Categories
                 </a>
@@ -2112,11 +2111,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/blog/tag/" title="Tag"
+                href="/tag/" title="Tag"
                   
                   
                   
-                    active-action="action-blogtag"
+                    active-action="action-tag"
                   >
                   <i class='fa-solid fa-tags fa-fw'></i>Tag
                 </a>
@@ -2129,11 +2128,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/blog/archives/" title="Archives"
+                href="/archives/" title="Archives"
                   
                   
                   
-                    active-action="action-blogarchives"
+                    active-action="action-archives"
                   >
                   <i class='fa-solid fa-archive fa-fw'></i>Archives
                 </a>
@@ -2146,11 +2145,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/blog/about/" title="About"
+                href="/about/" title="About"
                   
                   
                   
-                    active-action="action-blogabout"
+                    active-action="action-about"
                   >
                   <i class='fa-solid fa-link fa-fw'></i>About
                 </a>
@@ -2199,11 +2198,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/blog/" title="Home"
+                href="/" title="Home"
                   
                   
                   
-                    active-action="action-blog"
+                    active-action="action-home"
                   >
                   <i class='fa-solid fa-house fa-fw'></i>Home
                 </a>
@@ -2216,11 +2215,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/blog/categories/" title="Categories"
+                href="/categories/" title="Categories"
                   
                   
                   
-                    active-action="action-blogcategories"
+                    active-action="action-categories"
                   >
                   <i class='fa-solid fa-folder-open fa-fw'></i>Categories
                 </a>
@@ -2233,11 +2232,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/blog/tag/" title="Tag"
+                href="/tag/" title="Tag"
                   
                   
                   
-                    active-action="action-blogtag"
+                    active-action="action-tag"
                   >
                   <i class='fa-solid fa-tags fa-fw'></i>Tag
                 </a>
@@ -2250,11 +2249,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/blog/archives/" title="Archives"
+                href="/archives/" title="Archives"
                   
                   
                   
-                    active-action="action-blogarchives"
+                    active-action="action-archives"
                   >
                   <i class='fa-solid fa-archive fa-fw'></i>Archives
                 </a>
@@ -2267,11 +2266,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/blog/about/" title="About"
+                href="/about/" title="About"
                   
                   
                   
-                    active-action="action-blogabout"
+                    active-action="action-about"
                   >
                   <i class='fa-solid fa-link fa-fw'></i>About
                 </a>
@@ -2365,7 +2364,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 <div id="l_main" class=''>
   <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="https://yxt66.github.io/2022/11/05/03koa基础/">
+  <link itemprop="mainEntityOfPage" href="https://yxt66.github.io/blog/2022/11/05/03koa基础/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Taoblog">
   </span>
@@ -2527,12 +2526,12 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class="prev-next">
       
       
-        <a class='next' href='/blog/2022/11/05/02hexo%E4%BD%BF%E7%94%A8%E6%B3%A8%E6%84%8F/'>
+        <a class='next' href='/2022/11/05/02hexo%E4%BD%BF%E7%94%A8%E6%B3%A8%E6%84%8F/'>
           <p class='title'>_config.yml 配置问题<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>hexo配置
+          <p class='content'>hexo 配置
 
 
-1._config.yml的配置12345678910deploy:  type: 部署类型(git)  branch: 分支名(master)  repo: 部署路径(git...</p>
+1._config.yml的配置12345678910deploy:  type: 部署类型(git)  branch: 分支名(master)  repo: 部署路径(gi...</p>
         </a>
       
     </div>
@@ -2548,7 +2547,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="discussionUrl" content="/blog/2022/11/05/03koa%E5%9F%BA%E7%A1%80/index.html#comments">
+      <meta itemprop="discussionUrl" content="/2022/11/05/03koa%E5%9F%BA%E7%A1%80/index.html#comments">
     </span>
     <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
@@ -2691,7 +2690,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="social-wrapper" itemprop="about" itemscope itemtype="http://schema.org/Thing">
           
             
-              <a href="/blog/atom.xml"
+              <a href="/atom.xml"
                 class="social fas fa-rss flat-btn"
                 target="_blank"
                 rel="external nofollow noopener noreferrer" itemprop="url">
@@ -2763,7 +2762,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <!-- internal -->
 
-<script src="/blog/blog/js/app.js"></script>
+<script src="/js/app.js"></script>
 
 
 
@@ -2779,19 +2778,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("/blog/js/plugins/tags/sites.js")
+        volantis.js("/js/plugins/tags/sites.js")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("/blog/js/plugins/tags/friends.js")
+        volantis.js("/js/plugins/tags/friends.js")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("/blog/js/plugins/tags/contributors.js")
+        volantis.js("/js/plugins/tags/contributors.js")
       }
     
   };
@@ -2911,14 +2910,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <!-- optional -->
 
   <script>
-  const SearchServiceDataPathRoot = ("/blog/" || "/").endsWith("/") ?
-    "/blog/" || "/" :
-    "/blog//" || "/";
+  const SearchServiceDataPathRoot = ("/" || "/").endsWith("/") ?
+    "/" || "/" :
+    "//" || "/";
   const SearchServiceDataPath = SearchServiceDataPathRoot + "content.json";
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("/blog/js/search/hexo.js");
+    return volantis.js("/js/search/hexo.js");
   }
 
   function loadSearchService() {
@@ -3167,7 +3166,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Taoblog","url":"https://yxt66.github.io/blog/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Yao Tao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://yxt66.github.io/blog/","sameAs":["https://github.com/volantis-x"],"description":"test description"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://yxt66.github.io/blog/","name":"Taoblog"}},{"@type":"ListItem","position":3,"item":{"@id":"https://yxt66.github.io/blog/2022/11/05/03koa基础/","name":"Koa"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Taoblog","url":"https://yxt66.github.io/blog/","keywords":null,"description":"test description","author":{"@type":"Person","name":"Yao Tao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://yxt66.github.io/blog/","description":"test description"},"publisher":{"@type":"Organization","name":"Taoblog","url":"https://yxt66.github.io/blog/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://yxt66.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Koa","description":"Koa基础","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://yxt66.github.io/2022/11/05/03koa%E5%9F%BA%E7%A1%80/"},"author":{"@type":"Person","name":"Yao Tao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://yxt66.github.io/blog/"},"publisher":{"@type":"Organization","name":"Taoblog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://yxt66.github.io/2022/11/05/03koa%E5%9F%BA%E7%A1%80/","wordCount":5,"datePublished":"2022-11-05T06:00:00.000Z","dateModified":"2022-11-06T09:03:05.190Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Taoblog","url":"https://yxt66.github.io/blog/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Yao Tao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://yxt66.github.io/blog/","sameAs":["https://github.com/volantis-x"],"description":"test description"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://yxt66.github.io/blog/","name":"Taoblog"}},{"@type":"ListItem","position":3,"item":{"@id":"https://yxt66.github.io/blog/2022/11/05/03koa基础/","name":"Koa"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Taoblog","url":"https://yxt66.github.io/blog/","keywords":null,"description":"test description","author":{"@type":"Person","name":"Yao Tao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://yxt66.github.io/blog/","description":"test description"},"publisher":{"@type":"Organization","name":"Taoblog","url":"https://yxt66.github.io/blog/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://yxt66.github.io/blog?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Koa","description":"Koa基础","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://yxt66.github.io/blog/2022/11/05/03koa%E5%9F%BA%E7%A1%80/"},"author":{"@type":"Person","name":"Yao Tao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://yxt66.github.io/blog/"},"publisher":{"@type":"Organization","name":"Taoblog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://yxt66.github.io/blog/2022/11/05/03koa%E5%9F%BA%E7%A1%80/","wordCount":5,"datePublished":"2022-11-05T06:00:00.000Z","dateModified":"2022-11-06T09:03:05.190Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
