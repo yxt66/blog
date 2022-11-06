@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="https://yxt66.github.io/blog/2022/11/04/01code-highlight/"/>
+  <link rel="canonical" href="https://yxt66.github.io/2022/11/04/01code-highlight/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -25,7 +25,7 @@
   <!-- Custom Files headBegin begin-->
   
   <!-- Custom Files headBegin end-->
-  <link rel="preload" href="/css/style.css" as="style">
+  <link rel="preload" href="/blog/css/style.css" as="style">
   <link rel="preload" href="https://unpkg.com/volantis-static@0.0.1654736714924/media/fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="https://unpkg.com/volantis-static@0.0.1654736714924/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
@@ -37,7 +37,7 @@
   
 <meta property="og:type" content="article">
 <meta property="og:title" content="Vue 导航守卫">
-<meta property="og:url" content="https://yxt66.github.io/blog/2022/11/04/01code-highlight/index.html">
+<meta property="og:url" content="https://yxt66.github.io/2022/11/04/01code-highlight/index.html">
 <meta property="og:site_name" content="Taoblog">
 <meta property="og:description" content="Welcome !">
 <meta property="og:locale" content="en_US">
@@ -1551,8 +1551,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.css" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.css"></noscript>
+  <link rel="stylesheet" href="/blog/css/style.css" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/blog/css/style.css"></noscript>
   
 <script>
 if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMode))
@@ -1624,9 +1624,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   volantis.GLOBAL_CONFIG ={
     debug: "env",
-    cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
+    cdn: {"js":{"app":"/blog/js/app.js","parallax":"/blog/js/plugins/parallax.js","rightMenu":"/blog/js/plugins/rightMenu.js","rightMenus":"/blog/js/plugins/rightMenus.js","sites":"/blog/js/plugins/tags/sites.js","friends":"/blog/js/plugins/tags/friends.js","contributors":"/blog/js/plugins/tags/contributors.js","search":"/blog/js/search/hexo.js"},"css":{"style":"/blog/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1667730032059),
+    lastupdate: new Date(1667730485698),
     sidebar: {
       for_page: ["blogger","category","tagcloud","text"],
       for_post: ["toc"],
@@ -2059,7 +2059,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		<div class="nav-main">
       
         
-        <a class="title flat-box" target="_self" href='/'>
+        <a class="title flat-box" target="_self" href='/blog/'>
           
             <img no-lazy class='logo' src='https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/Logo-NavBar@3x.png'/>
           
@@ -2077,11 +2077,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/" title="Home"
+                href="/blog/" title="Home"
                   
                   
                   
-                    active-action="action-home"
+                    active-action="action-blog"
                   >
                   <i class='fa-solid fa-house fa-fw'></i>Home
                 </a>
@@ -2094,11 +2094,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/categories/" title="Categories"
+                href="/blog/categories/" title="Categories"
                   
                   
                   
-                    active-action="action-categories"
+                    active-action="action-blogcategories"
                   >
                   <i class='fa-solid fa-folder-open fa-fw'></i>Categories
                 </a>
@@ -2111,11 +2111,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/tag/" title="Tag"
+                href="/blog/tag/" title="Tag"
                   
                   
                   
-                    active-action="action-tag"
+                    active-action="action-blogtag"
                   >
                   <i class='fa-solid fa-tags fa-fw'></i>Tag
                 </a>
@@ -2128,11 +2128,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/archives/" title="Archives"
+                href="/blog/archives/" title="Archives"
                   
                   
                   
-                    active-action="action-archives"
+                    active-action="action-blogarchives"
                   >
                   <i class='fa-solid fa-archive fa-fw'></i>Archives
                 </a>
@@ -2145,11 +2145,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/about/" title="About"
+                href="/blog/about/" title="About"
                   
                   
                   
-                    active-action="action-about"
+                    active-action="action-blogabout"
                   >
                   <i class='fa-solid fa-link fa-fw'></i>About
                 </a>
@@ -2198,11 +2198,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/" title="Home"
+                href="/blog/" title="Home"
                   
                   
                   
-                    active-action="action-home"
+                    active-action="action-blog"
                   >
                   <i class='fa-solid fa-house fa-fw'></i>Home
                 </a>
@@ -2215,11 +2215,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/categories/" title="Categories"
+                href="/blog/categories/" title="Categories"
                   
                   
                   
-                    active-action="action-categories"
+                    active-action="action-blogcategories"
                   >
                   <i class='fa-solid fa-folder-open fa-fw'></i>Categories
                 </a>
@@ -2232,11 +2232,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/tag/" title="Tag"
+                href="/blog/tag/" title="Tag"
                   
                   
                   
-                    active-action="action-tag"
+                    active-action="action-blogtag"
                   >
                   <i class='fa-solid fa-tags fa-fw'></i>Tag
                 </a>
@@ -2249,11 +2249,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/archives/" title="Archives"
+                href="/blog/archives/" title="Archives"
                   
                   
                   
-                    active-action="action-archives"
+                    active-action="action-blogarchives"
                   >
                   <i class='fa-solid fa-archive fa-fw'></i>Archives
                 </a>
@@ -2266,11 +2266,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/about/" title="About"
+                href="/blog/about/" title="About"
                   
                   
                   
-                    active-action="action-about"
+                    active-action="action-blogabout"
                   >
                   <i class='fa-solid fa-link fa-fw'></i>About
                 </a>
@@ -2364,7 +2364,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 <div id="l_main" class=''>
   <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="https://yxt66.github.io/blog/2022/11/04/01code-highlight/">
+  <link itemprop="mainEntityOfPage" href="https://yxt66.github.io/2022/11/04/01code-highlight/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Taoblog">
   </span>
@@ -2524,7 +2524,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-        <a class='prev' href='/2022/11/05/02hexo%E4%BD%BF%E7%94%A8%E6%B3%A8%E6%84%8F/'>
+        <a class='prev' href='/blog/2022/11/05/02hexo%E4%BD%BF%E7%94%A8%E6%B3%A8%E6%84%8F/'>
           <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>_config.yml 配置问题</p>
           <p class='content'>hexo 配置
 
@@ -2546,7 +2546,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="discussionUrl" content="/2022/11/04/01code-highlight/index.html#comments">
+      <meta itemprop="discussionUrl" content="/blog/2022/11/04/01code-highlight/index.html#comments">
     </span>
     <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
@@ -2679,7 +2679,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="social-wrapper" itemprop="about" itemscope itemtype="http://schema.org/Thing">
           
             
-              <a href="/atom.xml"
+              <a href="/blog/atom.xml"
                 class="social fas fa-rss flat-btn"
                 target="_blank"
                 rel="external nofollow noopener noreferrer" itemprop="url">
@@ -2751,7 +2751,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <!-- internal -->
 
-<script src="/js/app.js"></script>
+<script src="/blog/blog/js/app.js"></script>
 
 
 
@@ -2767,19 +2767,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("/js/plugins/tags/sites.js")
+        volantis.js("/blog/js/plugins/tags/sites.js")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("/js/plugins/tags/friends.js")
+        volantis.js("/blog/js/plugins/tags/friends.js")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("/js/plugins/tags/contributors.js")
+        volantis.js("/blog/js/plugins/tags/contributors.js")
       }
     
   };
@@ -2899,14 +2899,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <!-- optional -->
 
   <script>
-  const SearchServiceDataPathRoot = ("/" || "/").endsWith("/") ?
-    "/" || "/" :
-    "//" || "/";
+  const SearchServiceDataPathRoot = ("/blog/" || "/").endsWith("/") ?
+    "/blog/" || "/" :
+    "/blog//" || "/";
   const SearchServiceDataPath = SearchServiceDataPathRoot + "content.json";
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("/js/search/hexo.js");
+    return volantis.js("/blog/js/search/hexo.js");
   }
 
   function loadSearchService() {
@@ -3155,7 +3155,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Taoblog","url":"https://yxt66.github.io/blog/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Yao Tao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://yxt66.github.io/blog/","sameAs":["https://github.com/volantis-x"],"description":"test description"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://yxt66.github.io/blog/","name":"Taoblog"}},{"@type":"ListItem","position":3,"item":{"@id":"https://yxt66.github.io/blog/2022/11/04/01code-highlight/","name":"Vue 导航守卫"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Taoblog","url":"https://yxt66.github.io/blog/","keywords":null,"description":"test description","author":{"@type":"Person","name":"Yao Tao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://yxt66.github.io/blog/","description":"test description"},"publisher":{"@type":"Organization","name":"Taoblog","url":"https://yxt66.github.io/blog/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://yxt66.github.io/blog?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Vue 导航守卫","description":"Welcome !","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://yxt66.github.io/blog/2022/11/04/01code-highlight/"},"author":{"@type":"Person","name":"Yao Tao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://yxt66.github.io/blog/"},"publisher":{"@type":"Organization","name":"Taoblog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://yxt66.github.io/blog/2022/11/04/01code-highlight/","wordCount":9,"datePublished":"2022-11-04T08:43:00.000Z","dateModified":"2022-11-06T09:03:09.430Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Taoblog","url":"https://yxt66.github.io/blog/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Yao Tao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://yxt66.github.io/blog/","sameAs":["https://github.com/volantis-x"],"description":"test description"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://yxt66.github.io/blog/","name":"Taoblog"}},{"@type":"ListItem","position":3,"item":{"@id":"https://yxt66.github.io/blog/2022/11/04/01code-highlight/","name":"Vue 导航守卫"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Taoblog","url":"https://yxt66.github.io/blog/","keywords":null,"description":"test description","author":{"@type":"Person","name":"Yao Tao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://yxt66.github.io/blog/","description":"test description"},"publisher":{"@type":"Organization","name":"Taoblog","url":"https://yxt66.github.io/blog/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://yxt66.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Vue 导航守卫","description":"Welcome !","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://yxt66.github.io/2022/11/04/01code-highlight/"},"author":{"@type":"Person","name":"Yao Tao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://yxt66.github.io/blog/"},"publisher":{"@type":"Organization","name":"Taoblog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://yxt66.github.io/2022/11/04/01code-highlight/","wordCount":9,"datePublished":"2022-11-04T08:43:00.000Z","dateModified":"2022-11-06T09:03:09.430Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
