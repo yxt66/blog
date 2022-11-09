@@ -1624,7 +1624,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/blog/js/app.js","parallax":"/blog/js/plugins/parallax.js","rightMenu":"/blog/js/plugins/rightMenu.js","rightMenus":"/blog/js/plugins/rightMenus.js","sites":"/blog/js/plugins/tags/sites.js","friends":"/blog/js/plugins/tags/friends.js","contributors":"/blog/js/plugins/tags/contributors.js","search":"/blog/js/search/hexo.js"},"css":{"style":"/blog/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1667740197814),
+    lastupdate: new Date(1667959047594),
     sidebar: {
       for_page: ["blogger","category","tagcloud","text"],
       for_post: ["toc"],
@@ -2380,7 +2380,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://yxt66.github.io/blog/2022/11/05/03koa基础/">
+  <link itemprop="mainEntityOfPage" href="https://yxt66.github.io/blog/2022/11/09/04nodejs安装问题/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Taoblog">
   </span>
@@ -2398,26 +2398,40 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/blog/2022/11/05/03koa%E5%9F%BA%E7%A1%80/"  itemprop="url">
-        Koa
+      <a href="/blog/2022/11/09/04nodejs%E5%AE%89%E8%A3%85%E9%97%AE%E9%A2%98/"  itemprop="url">
+        nodejs 安装问题
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
-      <p>Koa基础</p>
+      
+        nodejs安装
+
+1.下载地址12//下载地址https://nodejs.org/zh-cn/download/releases/
+
+2.新建两个文件放node的模块和缓存12345npm config set prefix &quot;D:\nodesjs\node_global&quot;npm config set cache &quot;D:\nodesjs\node_cache...
+      
     
   </div>
   
     <div class='meta-v3' line_style='solid'>
       <div>
         
-        <time itemprop="dateCreated datePublished" datetime="2022-11-05T14:00:00+08:00">2022-11-05</time>
+        <time itemprop="dateCreated datePublished" datetime="2022-11-09T00:00:00+08:00">2022-11-09</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/blog/categories/Software-Install/">Software Install</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/blog/categories/Software-Install/" itemprop="url"><span itemprop="name">Software Install</span></a>
+            </span>
+          
         
       </div>
       
         <div>
-          <a class='readmore' href='/blog/2022/11/05/03koa%E5%9F%BA%E7%A1%80/' itemprop="url">
+          <a class='readmore' href='/blog/2022/11/09/04nodejs%E5%AE%89%E8%A3%85%E9%97%AE%E9%A2%98/' itemprop="url">
             Read More
           </a>
         </div>
@@ -2433,7 +2447,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://yxt66.github.io/blog/2022/11/05/02hexo使用注意/">
+  <link itemprop="mainEntityOfPage" href="https://yxt66.github.io/blog/2022/11/05/02blog/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Taoblog">
   </span>
@@ -2451,14 +2465,17 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/blog/2022/11/05/02hexo%E4%BD%BF%E7%94%A8%E6%B3%A8%E6%84%8F/"  itemprop="url">
+      <a href="/blog/2022/11/05/02blog/"  itemprop="url">
         _config.yml 配置问题
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
-      <div class="note success"><p>hexo 配置</p></div>
+      
+        blog配置
+blog配置问题1._config.yml配置1234567891011deploy:  type: 部署类型(git)  branch: 分支名(master)  repo: 部署路径(git@github.com:name/name.git)//URL此处配置错误将编译后文件路径会出现问题//io后面没有/blog会导致搜索出现问题//If your site is put...
+      
     
   </div>
   
@@ -2468,17 +2485,17 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <time itemprop="dateCreated datePublished" datetime="2022-11-05T00:00:00+08:00">2022-11-05</time>
         
           <span class="dot"></span>
-          <a class="category-link" href="/blog/categories/Category-One/">Category One</a>
+          <a class="category-link" href="/blog/categories/Software-Install/">Software Install</a>
           
             <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/blog/categories/Category-One/" itemprop="url"><span itemprop="name">Category One</span></a>
+              <a href="/blog/categories/Software-Install/" itemprop="url"><span itemprop="name">Software Install</span></a>
             </span>
           
         
       </div>
       
         <div>
-          <a class='readmore' href='/blog/2022/11/05/02hexo%E4%BD%BF%E7%94%A8%E6%B3%A8%E6%84%8F/' itemprop="url">
+          <a class='readmore' href='/blog/2022/11/05/02blog/' itemprop="url">
             Read More
           </a>
         </div>
@@ -2513,7 +2530,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     <h2 class="article-title"  itemprop="name headline">
       <a href="/blog/2022/11/04/01code-highlight/"  itemprop="url">
-        Vue 导航守卫
+        Welcome Tao's blog
       </a>
     </h2>
   
@@ -2637,9 +2654,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <ul class="entry navigation">
         
           <li><a class="flat-box"
-            title="/blog/categories/Category-One/" href="/blog/categories/Category-One/"
-            active-action="action-blogcategoriesCategory-One"
-            ><div class='name'>Category One</div><div class='badge'>(1)</div></a></li>
+            title="/blog/categories/Software-Install/" href="/blog/categories/Software-Install/"
+            active-action="action-blogcategoriesSoftware-Install"
+            ><div class='name'>Software Install</div><div class='badge'>(2)</div></a></li>
         
       </ul>
     </div>
@@ -2664,7 +2681,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
     <div class='content'>
-      <a href="/blog/tags/JS/" style="font-size: 14px; color: #999">JS</a> <a href="/blog/tags/blog-Config/" style="font-size: 14px; color: #999">blog Config</a>
+      <a href="/blog/tags/Hexo-Config/" style="font-size: 14px; color: #999">Hexo Config</a> <a href="/blog/tags/nodejs/" style="font-size: 14px; color: #999">nodejs</a>
     </div>
   </section>
 
