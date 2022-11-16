@@ -5,8 +5,8 @@
   <meta name="Volantis" content="5.7.6">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="https://yxt66.github.io/blog/tags/nodejs/"/>
+  
+  <link rel="canonical" href="https://yxt66.github.io/blog/2022/11/16/09vue2、3响应式数据原理/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -32,18 +32,21 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>Tag: nodejs - Taoblog</title>
-  <meta name="keywords" content="null">
-  <meta desc name="description" content="test description - Yao Tao - Taoblog">
+  <title>Vue2、3响应式数据原理 - Taoblog</title>
+  <meta name="keywords" content="Vue3,null">
+  <meta desc name="description" content="Vue2、3响应式数据原理 - Yao Tao - Taoblog">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="Taoblog">
-<meta property="og:url" content="https://yxt66.github.io/blog/tags/nodejs/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Vue2、3响应式数据原理">
+<meta property="og:url" content="https://yxt66.github.io/blog/2022/11/16/09vue2%E3%80%813%E5%93%8D%E5%BA%94%E5%BC%8F%E6%95%B0%E6%8D%AE%E5%8E%9F%E7%90%86/index.html">
 <meta property="og:site_name" content="Taoblog">
-<meta property="og:description" content="test description">
+<meta property="og:description" content="Vue2、3响应式数据原理">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2022-11-15T16:00:00.000Z">
+<meta property="article:modified_time" content="2022-11-16T10:36:50.342Z">
 <meta property="article:author" content="Yao Tao">
+<meta property="article:tag" content="Vue3">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2312,7 +2315,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="none" class='cover-wrapper  search' style="display: none;">
+      <div id="none" class='cover-wrapper post search' style="display: none;">
         
   <div class='cover-bg lazyload placeholder' data-bg="https://gcore.jsdelivr.net/gh/MHG-LAB/cron@gh-pages/bing/bing.jpg"></div>
 
@@ -2361,25 +2364,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="safearea">
         <div class="body-wrapper">
           
-
 <div id="l_main" class=''>
-  
-    
-      
-  <section class="post-list">
-    
-      
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://yxt66.github.io/blog/2022/11/09/04nodejs安装问题/">
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="https://yxt66.github.io/blog/2022/11/16/09vue2、3响应式数据原理/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Taoblog">
   </span>
@@ -2388,64 +2375,266 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <meta itemprop="description" content="test description">
   </span>
   
-  
+
+
   
     <span hidden>
       <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
     </span>
   
-  
+  <div class="article-meta" id="top">
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/blog/2022/11/09/04nodejs%E5%AE%89%E8%A3%85%E9%97%AE%E9%A2%98/"  itemprop="url">
-        nodejs 安装问题
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
     
-      <div class="note success"><p>nodejs安装</p></div>
+    
+      <h1 class="title" itemprop="name headline">
+        Vue2、3响应式数据原理
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' href="/" rel="nofollow">
+    <img itemprop="image" src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/apple-touch-icon.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/apple-touch-icon.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">YaoTao</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class='new-meta-item category'>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/blog/categories/Vue/">Vue</a>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/blog/categories/Vue/" itemprop="url"><span itemprop="name">Vue</span></a>
+      </span>
     
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2022-11-09T00:00:00+08:00">2022-11-09</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/blog/categories/Software-Install/">Software Install</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/blog/categories/Software-Install/" itemprop="url"><span itemprop="name">Software Install</span></a>
-            </span>
+
+
           
         
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2022-11-16T00:00:00+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：Nov 16, 2022</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
       </div>
+    
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <div class="note success"><p>Vue2、3响应式数据原理</p></div>
+
+<span id="more"></span>
+
+<h2 id="1-Vue2响应式数据简单实现原理："><a href="#1-Vue2响应式数据简单实现原理：" class="headerlink" title="1.Vue2响应式数据简单实现原理："></a>1.Vue2响应式数据简单实现原理：</h2><ul>
+<li><p>通过Object.defineProperty()劫持各个属性的get、set方法</p>
+</li>
+<li><p>缺点：</p>
+<ul>
+<li><p>1.不能监听到对象上属性的新增和删除</p>
+<ul>
+<li><p>解决办法：<code>1.vm.$set(target,prop,value)</code></p>
+<p>​				<code>2.Vue.set(target,prop,value) eg.Vue.set(obj,&#39;sex&#39;,&#39;男&#39;)</code></p>
+</li>
+</ul>
+</li>
+<li><p>2.不能监听数组的变化(<code>eg. arr[index] = xxx  arr.length</code> 仍无法实现响应式)</p>
+<ul>
+<li>解决办法: <code>1.Vue通过重写数组原型上的办法实现响应式数据</code></li>
+<li>注意：<code>仅限数组的push/pop/shift/unshift/splice/sort/reverse七个方法</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//Vue2响应式数据简单实现原理：</span></span><br><span class="line">        <span class="keyword">let</span> obj = &#123;</span><br><span class="line">            <span class="attr">name</span>: <span class="string">&#x27;tao&#x27;</span>,</span><br><span class="line">            <span class="attr">age</span>: <span class="number">18</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="title class_">Object</span>.<span class="title function_">keys</span>(obj).<span class="title function_">forEach</span>(<span class="function"><span class="params">item</span> =&gt;</span> &#123;</span><br><span class="line">            <span class="keyword">let</span> val = obj[item]</span><br><span class="line">            <span class="title class_">Object</span>.<span class="title function_">defineProperty</span>(obj,item,&#123;</span><br><span class="line">                <span class="title function_">get</span>(<span class="params"></span>)&#123;</span><br><span class="line">                    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">`obj中<span class="subst">$&#123;item&#125;</span>属性被获取了,Vue2去更新视图`</span>)</span><br><span class="line">                    <span class="keyword">return</span> <span class="variable language_">this</span>.<span class="property">val</span></span><br><span class="line">                &#125;,</span><br><span class="line">                <span class="title function_">set</span>(<span class="params">newVal</span>)&#123;</span><br><span class="line">                    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">`obj中<span class="subst">$&#123;item&#125;</span>属性被修改了,Vue2去更新视图`</span>)</span><br><span class="line">                    <span class="keyword">return</span> <span class="variable language_">this</span>.<span class="property">newVal</span></span><br><span class="line">                &#125;</span><br><span class="line">            &#125;)</span><br><span class="line">        &#125;)</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-Vue3响应式数据简单实现原理"><a href="#2-Vue3响应式数据简单实现原理" class="headerlink" title="2. Vue3响应式数据简单实现原理:"></a>2. Vue3响应式数据简单实现原理:</h2><ul>
+<li>通过<code>Proxy</code>和<code>Reflect</code>实现响应式，通过劫持源对象返回一个代理对象的实例</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Vue3响应式数据简单实现原理:</span></span><br><span class="line">       <span class="keyword">let</span> handler = &#123;</span><br><span class="line">           <span class="title function_">get</span>(<span class="params">target,prop</span>)&#123;</span><br><span class="line">               <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">`obj中<span class="subst">$&#123;prop&#125;</span>属性被获取了,Vue3去更新视图`</span>)</span><br><span class="line">               <span class="keyword">return</span> <span class="title class_">Reflect</span>.<span class="title function_">get</span>(target,prop)</span><br><span class="line">           &#125;,</span><br><span class="line">           <span class="title function_">set</span>(<span class="params">target,prop,value</span>)&#123;</span><br><span class="line">               <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">`obj中<span class="subst">$&#123;prop&#125;</span>属性被修改(包括添加)了,Vue3去更新视图`</span>)</span><br><span class="line">               <span class="keyword">return</span> <span class="title class_">Reflect</span>.<span class="title function_">set</span>(target,prop,value)</span><br><span class="line">           &#125;</span><br><span class="line">       &#125;</span><br><span class="line">       <span class="keyword">let</span> p = <span class="keyword">new</span> <span class="title class_">Proxy</span>(obj,handler)</span><br><span class="line">       <span class="comment">//handler至少是一个空对象,通过p 实现对obj的操作</span></span><br><span class="line">       </span><br><span class="line">       <span class="comment">// p.name = &#x27;yao&#x27;</span></span><br><span class="line">       <span class="comment">// expected output: </span></span><br><span class="line">       <span class="comment">// obj中name属性被修改(包括添加)了,Vue3去更新视图</span></span><br><span class="line">       <span class="comment">// obj中name属性被修改了,Vue2去更新视图</span></span><br><span class="line">       </span><br><span class="line">       obj.<span class="property">name</span> = <span class="string">&#x27;yao&#x27;</span></span><br><span class="line">       <span class="comment">// expected output: </span></span><br><span class="line">       <span class="comment">// obj中name属性被修改了,Vue2去更新视图</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="3-Vue3的ref函数和reactive函数"><a href="#3-Vue3的ref函数和reactive函数" class="headerlink" title="3.Vue3的ref函数和reactive函数"></a>3.Vue3的ref函数和reactive函数</h2><h3 id="3-1-ref函数"><a href="#3-1-ref函数" class="headerlink" title="3.1 ref函数"></a>3.1 ref函数</h3><ul>
+<li>作用： 定义一个响应式的数据</li>
+<li>语法：<code> const xxx = ref(initValue)</code></li>
+<li><code>initValue</code>可以是<strong style="color:#DD5145">基本类型、对象类型（包含数组）</strong>。<ul>
+<li>基本类型的数据：通过<code>Object.defineProperty()</code></li>
+<li>对象类型的数据：使用了<code>reactive</code>函数</li>
+<li>创建了一个响应式数据的引用对象（reference对象的实现类实例，简称ref对象）</li>
+<li>js中操作数据xxx.value，模板中读取数据不需要.value 直接<code>&lt;h1&gt;&#123;&#123;xxx&#125;&#125;&lt;/&gt;</code></li>
+</ul>
+</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/yxt66/img/main/img/image-20221116182343897.png" class="lazyload" data-srcset="https://raw.githubusercontent.com/yxt66/img/main/img/image-20221116182343897.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20221116182343897"></p>
+<h3 id="3-2-reactive函数"><a href="#3-2-reactive函数" class="headerlink" title="3.2 reactive函数"></a>3.2 reactive函数</h3><ul>
+<li>作用：定义<strong style="color:#DD5145">对象类型（包含数组）</strong>的响应式数据（深层次的）</li>
+<li>语法：<code> const xxx = reactive(源对象)</code>返回一个Proxy代理对象的实例，简称Proxy对象</li>
+<li>基于<code>Proxy</code>和<code>Reflect</code><ul>
+<li>均不需要<code>.value</code>操作数据</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-3区别"><a href="#3-3区别" class="headerlink" title="3.3区别"></a>3.3区别</h3><ul>
+<li>定义数据：<ul>
+<li>ref可以定义基本数据和对象类型数据，reactive只能定义对象类型数据。</li>
+</ul>
+</li>
+<li>原理：如上</li>
+<li>使用：</li>
+</ul>
+
+  </div>
+  
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
       
-        <div>
-          <a class='readmore' href='/blog/2022/11/09/04nodejs%E5%AE%89%E8%A3%85%E9%97%AE%E9%A2%98/' itemprop="url">
-            Read More
-          </a>
-        </div>
+       <!-- 相关文章 -->
+      
+      <!-- 版权声明组件 -->
+      
+      <!-- 打赏组件 -->
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-11-16T18:36:50+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：Nov 16, 2022</p>
+  </a>
 </div>
 
-          </div>
         
       
-    
-  </section>
+        
+          
   
+  <div class="new-meta-item meta-tags"><a class="tag" href="/blog/tags/Vue3/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Vue3</p></a></div>
+  <span hidden itemprop="keywords">Vue3</span>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
     
+      
+        <a class="-mob-share-twitter" title="" rel="external nofollow noopener noreferrer"
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/twitter.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/twitter.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+      
+        <a class="-mob-share-github" title="" rel="external nofollow noopener noreferrer"
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/github.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/github.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/blog/2022/11/13/07%E3%80%8AAlways%20With%20Me%E3%80%8B/'>
+          <p class='title'>郑成河 -《Always With Me》<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>郑成河 -《Always With Me》
+
+
+
+
+</p>
+        </a>
+      
+    </div>
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
+
   
 
 
+  <article class="post white-box shadow floatable blur" id="comments">
+    <span hidden>
+      <meta itemprop="discussionUrl" content="/blog/2022/11/16/09vue2%E3%80%813%E5%93%8D%E5%BA%94%E5%BC%8F%E6%95%B0%E6%8D%AE%E5%8E%9F%E7%90%86/index.html#comments">
+    </span>
+    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
-  
+
+    <div id="layoutHelper-comments"></div>
+
+  </article>
+
+
+
+
+
+
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -2454,161 +2643,52 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       
-<section class="widget blogger desktop mobile pjax">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box rectangle' href='/blog/about/'>
-          <img no-lazy src='https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-          <h2>YaoTao</h2>
-        
-        
-        
-          <p><span id="jinrishici-sentence">Taoblog</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/blog/atom.xml"
-              class="social fa-solid fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:yaotao@qq.com"
-              class="social fa-solid fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/yxt66"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget category desktop mobile pjax">
-    
-  <header>
-    
-      <a href='/blog/categories/'><i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>Article Categories</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/blog/categories/Es6/" href="/blog/categories/Es6/"
-            active-action="action-blogcategoriesEs6"
-            ><div class='name'>Es6</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/blog/categories/Guitar/" href="/blog/categories/Guitar/"
-            active-action="action-blogcategoriesGuitar"
-            ><div class='name'>Guitar</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/blog/categories/Software-Install/" href="/blog/categories/Software-Install/"
-            active-action="action-blogcategoriesSoftware-Install"
-            ><div class='name'>Software Install</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/blog/categories/Vue/" href="/blog/categories/Vue/"
-            active-action="action-blogcategoriesVue"
-            ><div class='name'>Vue</div><div class='badge'>(1)</div></a></li>
-        
-      </ul>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget tagcloud desktop mobile pjax">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>Article Tags</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/blog/tags/Es6%E6%A8%A1%E5%9D%97%E5%8C%96/" style="font-size: 14px; color: #999">Es6模块化</a> <a href="/blog/tags/Hexo-Config/" style="font-size: 14px; color: #999">Hexo Config</a> <a href="/blog/tags/Vue3/" style="font-size: 14px; color: #999">Vue3</a> <a href="/blog/tags/nodejs/" style="font-size: 14px; color: #999">nodejs</a> <a href="/blog/tags/%E3%80%8AAlways-With-Me%E3%80%8B/" style="font-size: 14px; color: #999">《Always With Me》</a>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
-<section class="widget text desktop pjax">
-  
-  <header>
-    
-      <a target="_blank" rel="noopener" href='https://github.com/yxt66'><i class="fab fa-github fa-fw" aria-hidden="true"></i><span class='name'>Kudos to me</span></a>
-    
-  </header>
-
-
-  <div class='content'>
-    
-  </div>
-</section>
-
     
   
 
 
 <div class="widget-sticky pjax">
 
+  
+  
+
+
+  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
+    
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-Vue2%E5%93%8D%E5%BA%94%E5%BC%8F%E6%95%B0%E6%8D%AE%E7%AE%80%E5%8D%95%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86%EF%BC%9A"><span class="toc-text">1.Vue2响应式数据简单实现原理：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-Vue3%E5%93%8D%E5%BA%94%E5%BC%8F%E6%95%B0%E6%8D%AE%E7%AE%80%E5%8D%95%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86"><span class="toc-text">2. Vue3响应式数据简单实现原理:</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-Vue3%E7%9A%84ref%E5%87%BD%E6%95%B0%E5%92%8Creactive%E5%87%BD%E6%95%B0"><span class="toc-text">3.Vue3的ref函数和reactive函数</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-ref%E5%87%BD%E6%95%B0"><span class="toc-text">3.1 ref函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-reactive%E5%87%BD%E6%95%B0"><span class="toc-text">3.2 reactive函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3%E5%8C%BA%E5%88%AB"><span class="toc-text">3.3区别</span></a></li></ol></li></ol>
+    </div>
+  </section>
+
+  
+
 </div>
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -2636,13 +2716,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </aside>
 
 
+
           <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -3159,7 +3240,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Taoblog","url":"https://yxt66.github.io/blog/blog/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Yao Tao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://yxt66.github.io/blog/blog/","sameAs":["https://github.com/volantis-x"],"description":"test description"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://yxt66.github.io/blog/blog/","name":"Taoblog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://yxt66.github.io/blog/blog/tags/nodejs/","name":"nodejs"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Taoblog","url":"https://yxt66.github.io/blog/blog/","keywords":null,"description":"test description","author":{"@type":"Person","name":"Yao Tao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://yxt66.github.io/blog/blog/","description":"test description"},"publisher":{"@type":"Organization","name":"Taoblog","url":"https://yxt66.github.io/blog/blog/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://yxt66.github.io/blog?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"test description","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"Yao Tao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://yxt66.github.io/blog/blog/"},"publisher":{"@type":"Organization","name":"Taoblog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Taoblog","url":"https://yxt66.github.io/blog/blog/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Yao Tao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://yxt66.github.io/blog/blog/","sameAs":["https://github.com/volantis-x"],"description":"test description"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://yxt66.github.io/blog/blog/","name":"Taoblog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://yxt66.github.io/blog/blog/categories/Vue/","name":"Vue"}},{"@type":"ListItem","position":3,"item":{"@id":"https://yxt66.github.io/blog/blog/2022/11/16/09vue2、3响应式数据原理/","name":"Vue2、3响应式数据原理"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Taoblog","url":"https://yxt66.github.io/blog/blog/","keywords":null,"description":"test description","author":{"@type":"Person","name":"Yao Tao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://yxt66.github.io/blog/blog/","description":"test description"},"publisher":{"@type":"Organization","name":"Taoblog","url":"https://yxt66.github.io/blog/blog/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://yxt66.github.io/blog?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Vue2、3响应式数据原理","description":"Vue2、3响应式数据原理","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://yxt66.github.io/blog/2022/11/16/09vue2%E3%80%813%E5%93%8D%E5%BA%94%E5%BC%8F%E6%95%B0%E6%8D%AE%E5%8E%9F%E7%90%86/"},"author":{"@type":"Person","name":"Yao Tao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://yxt66.github.io/blog/blog/"},"publisher":{"@type":"Organization","name":"Taoblog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://yxt66.github.io/blog/2022/11/16/09vue2%E3%80%813%E5%93%8D%E5%BA%94%E5%BC%8F%E6%95%B0%E6%8D%AE%E5%8E%9F%E7%90%86/","wordCount":13,"datePublished":"2022-11-15T16:00:00.000Z","dateModified":"2022-11-16T10:36:50.342Z","articleSection":"Vue","keywords":"Vue3","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
