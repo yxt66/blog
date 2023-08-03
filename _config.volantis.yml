@@ -361,7 +361,7 @@ comments:
   # https://github.com/laymonage/giscus
   giscus:
     # 以下配置按照 yml 格式增删填写即可
-    repo: yxt66/blog-comments
+    repo: ${{secrets.TEST}}
     repo-id: R_kgDOJ6vfPA
     category: General
     category-id: DIC_kwDOJ6vfPM4CX10y
