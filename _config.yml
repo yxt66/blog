@@ -12,6 +12,11 @@ language: en
 timezone: ""
 favicon: https://raw.githubusercontent.com/yxt66/img/main/img/logo.svg
 # URL
+## run: |
+#       hexo clean
+#       hexo generate
+#       cp -r public/js public/blog/js 解决appjs路径问题
+#       hexo deploy
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: 'https://yxt66.github.io/blog'
 root: /blog/
