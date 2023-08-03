@@ -1,38 +1,53 @@
-name: Pages
+name: Hexo Blog CI
 
 on:
   push:
     branches:
-      - main  # default branch
+      - main
 
 jobs:
-  pages:
+  build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
+
     steps:
-      - uses: actions/checkout@v3
-        with:
-          token: ${{ secrets.BLOG_KEY }}
-          # If your repository depends on submodule, please see: https://github.com/actions/checkout
-          submodules: recursive
-      - name: Use Node.js 16.x
-        uses: actions/setup-node@v2
+      - name: Checkout Respository master branch
+        uses: actions/checkout@master
+
+      - name: Setup Node.js 
+        uses: actions/setup-node@master
         with:
           node-version: '16.18.1'
-      - name: Cache NPM dependencies
-        uses: actions/cache@v2
+
+      - name: Cache node modules
+        uses: actions/cache@v1
+        id: cache
         with:
           path: node_modules
-          key: ${{ runner.OS }}-npm-cache
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
-            ${{ runner.OS }}-npm-cache
-      - name: Install Dependencies
-        run: npm install
-      - name: Build
-        run: npm run build
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.BLOG_KEY }}
-          publish_dir: ./public
+            ${{runner.os}}-node-
+
+      - name: Setup Hexo Dependencies
+        run: |
+          npm install hexo-cli -g
+          npm install
+
+      - name: Setup Deploy Private Key
+        env:
+          HEXO_DEPLOY_PRIVATE_KEY: ${{secrets.BLOG_KEY}}
+        run: |
+          mkdir -p ~/.ssh/
+          echo "$HEXO_DEPLOY_PRIVATE_KEY" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan github.com >> ~/.ssh/know_hosts
+
+      - name: Setup Git Infomation
+        run: |
+          git config --global user.name "yxt66"
+          git config --global user.email "1290576060@qq.com"
+
+      - name: Deploy Hexo
+        run: |
+          hexo clean
+          hexo generate
+          hexo deploy
