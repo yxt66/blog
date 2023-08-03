@@ -50,4 +50,5 @@ jobs:
         run: |
           hexo clean
           hexo generate
+          cp -r public/js public/blog/js 
           hexo deploy
